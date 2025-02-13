@@ -1,0 +1,255 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0d1117;
+  color: #c9d1d9;
+  text-align: center;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Animated Background */
+.animated-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #0d1117, #161b22, #1f2937);
+  animation: gradientAnimation 10s infinite alternate;
+  z-index: -1;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: left; }
+  100% { background-position: right; }
+}
+
+/* Header */
+.header {
+  padding: 40px 0;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #58a6ff;
+  box-shadow: 0 0 10px rgba(88, 166, 255, 0.5);
+}
+
+.text-primary {
+  color: #58a6ff;
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+.text-secondary {
+  color: #8b949e;
+  font-size: 1.2rem;
+}
+
+/* About Me & Portfolio Overview */
+.about-box, .portfolio-overview {
+  background: #161b22;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(88, 166, 255, 0.1);
+}
+
+.about-box p, .portfolio-overview p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #c9d1d9;
+}
+
+/* Resume Download */
+.resume-box {
+  margin: 20px 0;
+}
+
+.resume-button {
+  display: inline-flex;
+  align-items: center;
+  background-color: #238636;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+.resume-button:hover {
+  background-color: #2ea043;
+}
+
+.resume-button svg {
+  margin-right: 8px;
+}
+
+/* Social Icons */
+.social-icons {
+  margin-top: 15px;
+}
+
+.icon-link {
+  margin: 0 10px;
+  font-size: 1.5rem;
+  color: #58a6ff;
+  transition: color 0.3s ease-in-out;
+}
+
+.icon-link:hover {
+  color: #1f6feb;
+}
+
+/* Projects Section */
+.projects-box {
+  margin-top: 30px;
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background: #161b22;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(88, 166, 255, 0.3);
+}
+
+.text-accent {
+  color: #58a6ff;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.text-muted {
+  color: #8b949e;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Contact Section */
+.contact-box {
+  margin-top: 40px;
+  padding: 20px;
+  background: #161b22;
+  border-radius: 10px;
+}
+
+.contact-box p {
+  font-size: 1rem;
+  margin: 8px 0;
+}
+
+.contact-box svg {
+  margin-right: 5px;
+  color: #58a6ff;
+}
+
+/* Footer */
+.footer {
+  margin-top: 40px;
+  padding: 10px;
+  background: #161b22;
+  border-radius: 10px;
+}
+
+.text-footer {
+  font-size: 0.9rem;
+  color: #8b949e;
+}
+
+/* Floating Animation */
+.floating {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  .projects-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+         
+/* About Me & Portfolio Overview Sections */
+.about-box, .portfolio-overview {
+  background: #161b22; /* Dark background */
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(88, 166, 255, 0.1);
+  text-align: left;
+}
+
+.about-box h2, .portfolio-overview h2 {
+  color: #58a6ff; /* Accent color */
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.about-box p, .portfolio-overview p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #c9d1d9;
+}
+
+/* Highlighted Text */
+.about-box strong, .portfolio-overview strong {
+  color: #2ea043; /* Green accent */
+  font-weight: bold;
+}
+
+/* Animated Divider */
+.divider {
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #58a6ff, #1f6feb);
+  border-radius: 2px;
+  margin: 10px 0;
+  animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  0% { box-shadow: 0 0 5px rgba(88, 166, 255, 0.5); }
+  100% { box-shadow: 0 0 15px rgba(88, 166, 255, 0.8); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-box, .portfolio-overview {
+    text-align: center;
+    padding: 15px;
+  }
+}
