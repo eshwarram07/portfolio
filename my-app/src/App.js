@@ -37,16 +37,7 @@ export default function Portfolio() {
           </a>
         </div>
 
-        {/* About Me Section (Now below the image) */}
-        <section className="about-box">
-          <h2 className="text-primary">About Me</h2>
-          <p className="text-muted">
-            Passionate Software Development Engineer with expertise in 
-            <strong> Full Stack Web Development</strong>. Proficient in <strong>React, Spring Boot, and SQL</strong>, 
-            with a strong focus on scalable web applications. Dedicated to writing clean, efficient, 
-            and user-centric code.
-          </p>
-        </section>
+        
 
         {/* Portfolio Overview */}
         <section className="portfolio-overview">
@@ -55,6 +46,17 @@ export default function Portfolio() {
             This portfolio showcases my expertise in web development, featuring <strong>real-world projects</strong> 
             built with modern technologies. It includes interactive UI components, back-end functionality, 
             and database integration.
+          </p>
+        </section>
+
+        {/* About Me Section (Now below the image) */}
+        <section className="about-box">
+          <h2 className="text-primary">About Me</h2>
+          <p className="text-muted">
+            Passionate Software Development Engineer with expertise in 
+            <strong> Full Stack Web Development</strong>. Proficient in <strong>React, Spring Boot, and SQL</strong>, 
+            with a strong focus on scalable web applications. Dedicated to writing clean, efficient, 
+            and user-centric code.
           </p>
         </section>
 
