@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.de3eff71.css",
+    "main.js": "/portfolio/static/js/main.b57997b4.js",
+    "static/media/EshwarRam_Resume.pdf": "/portfolio/static/media/EshwarRam_Resume.34348e0cdb129ba92df1.pdf",
+    "static/media/profile.jpg": "/portfolio/static/media/profile.934042df0513d697a71b.jpg",
+    "index.html": "/portfolio/index.html",
+    "main.de3eff71.css.map": "/portfolio/static/css/main.de3eff71.css.map",
+    "main.b57997b4.js.map": "/portfolio/static/js/main.b57997b4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.de3eff71.css",
+    "static/js/main.b57997b4.js"
+  ]
+}
